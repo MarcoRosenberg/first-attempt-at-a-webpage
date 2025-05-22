@@ -1,0 +1,6 @@
+idea
+  - text based game
+      - organ trail inspo
+      - utilize data base for states and a simple engin for running **
+          - learn how *
+
