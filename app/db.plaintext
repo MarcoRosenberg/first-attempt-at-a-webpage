@@ -1,0 +1,13 @@
+Table players {
+  id int [pk, increment] // Player unique ID
+  username varchar [unique, not null] // Player username
+  created_at datetime [default: `CURRENT_TIMESTAMP`]
+}
+
+Table player_states {
+  id int [pk, increment]
+  player_id int [ref: > players.id] // Foreign key to players
+  location varchar // Current location key
+  health int // Player health
+  inventory text // JSON string representing inventory items
+}
